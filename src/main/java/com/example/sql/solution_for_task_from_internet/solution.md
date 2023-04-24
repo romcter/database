@@ -145,4 +145,14 @@ GROUP BY country.continent;
 
 ![Screenshot 2023-04-20 at 16.38.13.png](Screenshot%202023-04-20%20at%2016.38.13.png)
 
+![Screenshot 2023-04-20 at 16.50.43.png](Screenshot%202023-04-20%20at%2016.50.43.png)
+
+![Screenshot 2023-04-20 at 16.56.46.png](Screenshot%202023-04-20%20at%2016.56.46.png)
+
+
+
+
+
+
+
 
