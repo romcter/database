@@ -1,4 +1,4 @@
-package com.example.sql.locking.entity;
+package com.example.sql.locking.app.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

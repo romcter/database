@@ -1,6 +1,6 @@
-package com.example.sql.locking.repository;
+package com.example.sql.locking.app.repository;
 
-import com.example.sql.locking.entity.Flight;
+import com.example.sql.locking.app.entity.Flight;
 import org.springframework.data.repository.CrudRepository;
 
 public interface FlightRepository extends CrudRepository<Flight, Long> { }

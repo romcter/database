@@ -1,6 +1,6 @@
-package com.example.sql.locking;
+package com.example.sql.locking.pesimistic;
 
-import com.example.sql.locking.service.DbService;
+import com.example.sql.locking.pesimistic.service.DbService;
 import jakarta.annotation.Resource;
 import org.apache.commons.lang3.function.FailableRunnable;
 import org.springframework.boot.CommandLineRunner;
@@ -11,18 +11,22 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @SpringBootApplication
-public class JpaLockApplication implements CommandLineRunner {
+public class PessimisticLockingApplication implements CommandLineRunner {
 
     @Resource
     private DbService dbService;
 
     public static void main(String[] args) {
-        SpringApplication.run(JpaLockApplication.class, args);
+        SpringApplication.run(PessimisticLockingApplication.class, args);
     }
 
     @Override
     public void run(String... args) {
+        dbService.loadData();
+
         ExecutorService executor = Executors.newFixedThreadPool(2);
+
+
         executor.execute(safeRunnable(dbService::changeFlight1));
         executor.execute(safeRunnable(dbService::changeFlight2));
         executor.shutdown();
@@ -37,4 +41,5 @@ public class JpaLockApplication implements CommandLineRunner {
             }
         };
     }
+
 }

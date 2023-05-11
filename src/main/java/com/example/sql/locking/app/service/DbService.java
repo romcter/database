@@ -1,9 +1,9 @@
-package com.example.sql.locking.service;
+package com.example.sql.locking.app.service;
 
-import com.example.sql.locking.entity.Flight;
-import com.example.sql.locking.entity.Ticket;
-import com.example.sql.locking.repository.FlightRepository;
-import com.example.sql.locking.repository.TicketRepository;
+import com.example.sql.locking.app.entity.Flight;
+import com.example.sql.locking.app.entity.Ticket;
+import com.example.sql.locking.app.repository.FlightRepository;
+import com.example.sql.locking.app.repository.TicketRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
