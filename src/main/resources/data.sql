@@ -1,3 +1,5 @@
+CREATE DATABASE spring_boot_postgres_db;
+
 INSERT INTO person (name, created, deleted, updated) VALUES ('USA', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974');
 INSERT INTO person (name, created, deleted, updated) VALUES ('France', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974');
 INSERT INTO person (name, created, deleted, updated) VALUES ('Brazil', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974', '2023-03-25T13:08:32.006974');
